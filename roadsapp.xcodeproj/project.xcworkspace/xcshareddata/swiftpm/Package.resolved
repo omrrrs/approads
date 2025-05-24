@@ -1,0 +1,15 @@
+{
+  "originHash" : "4cb3e57af7c58a0bba0e809c3744705478b5c2c5efc927a1a13c4e0a3e08b8be",
+  "pins" : [
+    {
+      "identity" : "maphero-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/idealprojects/maphero-ios",
+      "state" : {
+        "revision" : "3822072bb62d57b787da625dfddf7f359e460cf2",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
