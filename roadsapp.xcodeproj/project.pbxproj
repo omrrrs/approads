@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C2A7FE2DE210EF00B4CE23 /* MapHero in Frameworks */ = {isa = PBXBuildFile; productRef = 07C2A7FD2DE210EF00B4CE23 /* MapHero */; };
 		07DD93052DE12F8D0018B446 /* MapHero in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD93042DE12F8D0018B446 /* MapHero */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +34,22 @@
 		07DD92EF2DE12F2E0018B446 /* roadsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roadsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		07C2A7FA2DE20CEF00B4CE23 /* Exceptions for "roadsapp" folder in "roadsapp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 07DD92D42DE12F2B0018B446 /* roadsapp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		07DD92D72DE12F2B0018B446 /* roadsapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				07C2A7FA2DE20CEF00B4CE23 /* Exceptions for "roadsapp" folder in "roadsapp" target */,
+			);
 			path = roadsapp;
 			sourceTree = "<group>";
 		};
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C2A7FE2DE210EF00B4CE23 /* MapHero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 			);
 			name = roadsappTests;
 			packageProductDependencies = (
+				07C2A7FD2DE210EF00B4CE23 /* MapHero */,
 			);
 			productName = roadsappTests;
 			productReference = 07DD92E52DE12F2E0018B446 /* roadsappTests.xctest */;
@@ -330,6 +346,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -387,6 +405,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -408,6 +428,11 @@
 				DEVELOPMENT_TEAM = 52SSYKYA7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = roadsapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to your location to show nearby places and calculate accurate distances.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to show nearby places and calculate accurate distances.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +462,11 @@
 				DEVELOPMENT_TEAM = 52SSYKYA7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = roadsapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to your location to show nearby places and calculate accurate distances.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to show nearby places and calculate accurate distances.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +493,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52SSYKYA7J;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = omarserver.roadsappTests;
@@ -482,6 +513,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52SSYKYA7J;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = omarserver.roadsappTests;
@@ -500,6 +532,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52SSYKYA7J;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = omarserver.roadsappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +550,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52SSYKYA7J;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = omarserver.roadsappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -580,6 +614,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		07C2A7FD2DE210EF00B4CE23 /* MapHero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07DD93032DE12F8D0018B446 /* XCRemoteSwiftPackageReference "maphero-ios" */;
+			productName = MapHero;
+		};
 		07DD93042DE12F8D0018B446 /* MapHero */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 07DD93032DE12F8D0018B446 /* XCRemoteSwiftPackageReference "maphero-ios" */;

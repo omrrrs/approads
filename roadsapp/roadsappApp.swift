@@ -7,15 +7,14 @@ import MapHero
 
 @main
 struct roadsappApp: App {
-    private let mapHeroToken = "a8Kla1mcQY1uudLZ1v_UvP5qBZEtWxG8R_ss"
+    private let mapHeroToken = APIKeys.mapToken
 
     init() {
-        // Enable verbose logging for MapHero SDK FIRST
-        let loggingConfig = MHLoggingConfiguration.shared // Corrected based on compiler error
+        let loggingConfig = MHLoggingConfiguration.shared 
         loggingConfig.loggingLevel = .verbose 
         print("MapHero SDK verbose logging enabled.")
 
-        let token = "a8Kla1mcQY1uudLZ1v_UvP5qBZEtWxG8R_ss"
+        let token = APIKeys.mapToken
         let networkConfig = MHNetworkConfiguration.sharedManager
         
         let sessionConfig = networkConfig.sessionConfiguration ?? URLSessionConfiguration.default
@@ -31,6 +30,8 @@ struct roadsappApp: App {
         MHSettings.apiKey = token
         
         MHSettings.use(.mapLibre)
+        
+        MHNetworkConfiguration.sharedManager.setToken(mapHeroToken)
         
         print("MapHero token set in MHSettings.apiKey, MHNetworkConfiguration.token, and as 'map-token' header in URLSessionConfiguration")
     }
